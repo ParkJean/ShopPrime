@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="../vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../vista/css/inicio/Registro.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="title">Crear Cuenta </div>
+        <div class="content">
+
+            <form action="../../controlador/Crearcuenta.php" method="post" enctype="multipart/form-data">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details" for="txtUsuario">Nombre Usuario</span>
+                        <input class="details" type="text" name="txtUsuario" id="txtUsuario"
+                            placeholder="Nombre Usuario">
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details" for="txtApPaterno">Apellido Paterno</span>
+                        <input class="details" type="text" name="txtApPaterno" id="txtApPaterno"
+                            placeholder="Apellido Paterno">
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details" for="txtApMaterno">Apellido Materno</span>
+                        <input class="details" type="text" name="txtApMaterno" id="txtApMaterno"
+                            placeholder="Apellido Materno">
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details" for="txtEmail">Email</span>
+                        <input class="details" type="email" name="txtEmail" id="txtEmail" placeholder="Email">
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details" for="txtTelefono">Telefono</span>
+                        <input class="details" type="tel" name="txtTelefono" id="txtTelefono" placeholder="Telefono">
+
+                    </div>
+
+
+
+                    <div class="input-box">
+                        <span class="details" for="txtNombre+">Nombre Login</span>
+                        <input class="details" type="text" name="txtNombreLogin" id="txtNombreLogin"
+                            placeholder="Nombre Login">
+
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details" for="txtPassword">Contraseña</sapan>
+                            <input class="details" type="password" name="txtContrasena" id="txtPassword"
+                                placeholder="Contrasena">
+
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details" for="txtFotoUsuario">Foto Usuario</span>
+                        <input class="" type="file" name="txtFoto" id="txtFoto" placeholder="foto"
+                            accept=".png,.jpg,.jpeg">
+
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details" for="txtTipoUsuario">Tipo Usuario</span>
+                        <select class="details" name="txtTipoUsuario" id="txtTipoUsuario" placeholder="Tipo Usuario">
+                            <option value="1">Administrador</option>
+                            <option value="2">Cliente</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Registrar">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="vista/css/estiloindex.css">
+    <link rel="stylesheet" href="vista/css/estilomenu.css">
+    <link rel="stylesheet" href="vista/vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vista/vendor/fontawesome-free-6.4.0-web/css/all.css">
+    <script src="../vista/vendor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/buscar.js"></script>
+<div id="contenedor">
+ <header class="container-fluid  text-white text-center pt-4">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h1 class="tipodeFuente"> ShopPrime1</h1>
+                </div>
+
+                <div id="frmBuscar" class="col-sm-6">
+                    <form action="">
+
+                        <div class="input-group mb-3" id="borde">
+
+                            <div class="dropdon">
+                                <a type="button" class="btn btn-warning" href="#" data-bs-toggle="dropdown">
+                                     Categorias
+                                </a>
+                                <ol class="dropdown-menu ">
+                                    <li><a class="dropdown-item" href="vista/paginas/Concert.html"
+                                            target="contenedor">Concert</a></li>
+                                    <li><a class="dropdown-item" href="vista/paginas/Merch.html"
+                                            target="contenedor">
+                                          Merch </a></li>
+                                    <li><a class="dropdown-item" href="vista/paginas/Music.html"
+                                            target="contenedor"> Music</a></li>
+                                </ol>
+                            </div>
+                           
+                            <input class="form-control " type="text" name="txtBuscar" id="txtBuscar" onclick="borde()" ;
+                                placeholder="Buscar ShopPrime">
+                            <button class="btn btn-warning" type="button" name="btnBuscar">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="col-sm-2">
+                    <div class="dropdon">
+                        <a type="button" class="btn btn-black text-white" href="#" data-bs-toggle="dropdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="43" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg> Cuentas
+                        </a>
+                        <ol class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="vista/paginas/IniciarSesion.html" target="_self">Iniciar
+                                    Sesion</a></li>
+                            <li><a class="dropdown-item" href="vista/paginas/Registro.html" target="contenedor">
+                                    Registro </a></li>
+
+                        </ol>
+                    </div>
+                </div>
+                    <div class="col-sm-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="50" fill="currentColor"
+                        class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                    Carrito
+                </div>
+            </div>
+
+        </header>
+
+        <nav>
+            <ul>
+
+                <div class="offcanvas offcanvas-start" id="demo">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">ShopPrime</h1>
+                        <button type="button" class="btn-close " data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Acerca de</p>
+                        <p>Ayuda</p>
+                        <p>Más</p>
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-3">
+                    </button>
+                </div>
+
+                <li>
+                    <a id="Todo" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        &#9776 Todo
+                    </a>
+                </li>
+                  <li id="Inicio"><a href="vista/paginas/inicio.html" target="contenedor"><i
+                            class="fa-solid fa-house"></i>
+                        Inicio</a>
+                </li>
+            </nav>
+        
+        <section>
+ <iframe src="vista/paginas/inicio.html" frameborder="0" name="contenedor" width="100%" height="1070PX">
+
+            </iframe>
+   </section>
+
+        <footer class="py-5 my-4">
+            <div class="nav justify-content-center ">
+                <li class="nav"><a href="vista/paginas/inicio.html" target="iframeCnt"
+                        class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Publicaciones</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Redes sociales</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Más</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+            </div>
+            <p class="text-center text-muted">&copy; compañia</p>
+        </footer>
+    </div>
+</head>
+
+</html>

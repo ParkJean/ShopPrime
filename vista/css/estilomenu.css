@@ -1,0 +1,51 @@
+ul{
+    list-style-type: none;   
+    margin: 0px;
+    padding: 0px;
+    overflow: inherit;
+    background-color: #09192a;
+}   
+ul li{
+    float: left;
+
+}
+ul li:last-child{
+   border-right: none;
+}
+
+ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 19px 25px;
+    text-decoration: none;
+
+}
+ul li a:hover:not(.active){
+   background-color: #b4f0f5;
+
+   border: #830707;
+}
+.active{
+    background-color: green;
+}   
+#perfil{
+    float:right;
+}
+#Todo{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 19px 25px;
+    text-decoration: none;  
+}
+    
+
+.offcanvas-body div:hover:not(.active){
+    background-color: #000000;
+    border:#a80b0b;
+    left: 100%;
+ }
+ hr{
+    border-color: white;
+ }
